@@ -46,17 +46,18 @@ The design should evoke the warmth of a cozy holiday kitchen filled with the sme
 
 ## Color Selection
 
-A warm, candy-inspired palette with rich gingerbread browns and vibrant confectionery accents.
+A warm, festive holiday palette with deep reds, rich golds, and cozy browns that evoke a cozy fireside holiday evening.
 
-- **Primary Color**: Rich Gingerbread Brown `oklch(0.45 0.08 60)` - Evokes warm, spiced cookies and establishes the cozy foundation
+- **Primary Color**: Festive Crimson Red `oklch(0.55 0.22 25)` - Bold, warm red that captures the spirit of the holidays
 - **Secondary Colors**: 
-  - Cream Frosting `oklch(0.95 0.02 85)` - For frosting details and highlights
-  - Deep Chocolate `oklch(0.25 0.04 55)` - For roof details and depth
-- **Accent Color**: Peppermint Red `oklch(0.55 0.22 25)` - Bold, festive color for candy decorations and interactive elements
+  - Warm Gold `oklch(0.62 0.15 45)` - Rich, buttery gold for accents and highlights
+  - Forest Green `oklch(0.68 0.18 140)` - Deep evergreen for balance and traditional holiday feel
+- **Accent Color**: Bright Gold `oklch(0.68 0.18 140)` - Festive green accent for decorative elements
+- **Background Color**: Deep Burgundy Brown `oklch(0.20 0.06 30)` - Rich, warm dark background that creates intimate atmosphere
 - **Foreground/Background Pairings**: 
-  - Background (Deep Night Blue `oklch(0.20 0.08 250)`): Cream text `oklch(0.95 0.02 85)` - Ratio 11.2:1 ✓
-  - Gingerbread Brown `oklch(0.45 0.08 60)`: White text `oklch(1 0 0)` - Ratio 5.2:1 ✓
-  - Peppermint Red `oklch(0.55 0.22 25)`: White text `oklch(1 0 0)` - Ratio 4.6:1 ✓
+  - Background (Deep Burgundy `oklch(0.20 0.06 30)`): Cream text `oklch(0.96 0.02 60)` - Ratio 12.8:1 ✓
+  - Festive Red `oklch(0.55 0.22 25)`: White text `oklch(0.98 0.01 60)` - Ratio 4.8:1 ✓
+  - Warm Gold `oklch(0.62 0.15 45)`: White text `oklch(0.98 0.01 60)` - Ratio 5.1:1 ✓
 
 ## Font Selection
 
