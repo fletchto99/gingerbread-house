@@ -11,7 +11,7 @@ function App() {
           Happy Holiday
         </h1>
         <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8 md:mb-12 font-medium">
-          From @fletchto99
+          From @fletchto99 and GitHub Spark
         </p>
         
         <div className="p-4 md:p-8 lg:p-12">
