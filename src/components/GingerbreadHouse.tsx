@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { useState } from 'react'
 
 const buildInVariants = {
   hidden: { opacity: 0, scale: 0.8 },
@@ -7,8 +6,6 @@ const buildInVariants = {
 }
 
 export function GingerbreadHouse() {
-  const [hoveredCandy, setHoveredCandy] = useState<string | null>(null)
-
   return (
     <div className="relative w-full max-w-2xl mx-auto">
       <svg viewBox="0 0 400 400" className="w-full h-auto drop-shadow-2xl">
@@ -73,46 +70,20 @@ export function GingerbreadHouse() {
           variants={buildInVariants}
           transition={{ duration: 0.6, delay: 0.8 }}
         >
-          <motion.circle
+          <circle
             cx="130"
             cy="320"
             r="10"
             fill="oklch(0.60 0.20 130)"
-            className="cursor-pointer"
-            onMouseEnter={() => setHoveredCandy('gumdrop1')}
-            onMouseLeave={() => setHoveredCandy(null)}
-            animate={{
-              scale: hoveredCandy === 'gumdrop1' ? 1.2 : 1,
-              filter: hoveredCandy === 'gumdrop1' ? 'drop-shadow(0 0 8px oklch(0.60 0.20 130))' : 'none'
-            }}
-            transition={{ duration: 0.2 }}
           />
-          <motion.circle
+          <circle
             cx="270"
             cy="320"
             r="10"
             fill="oklch(0.65 0.22 350)"
-            className="cursor-pointer"
-            onMouseEnter={() => setHoveredCandy('gumdrop2')}
-            onMouseLeave={() => setHoveredCandy(null)}
-            animate={{
-              scale: hoveredCandy === 'gumdrop2' ? 1.2 : 1,
-              filter: hoveredCandy === 'gumdrop2' ? 'drop-shadow(0 0 8px oklch(0.65 0.22 350))' : 'none'
-            }}
-            transition={{ duration: 0.2 }}
           />
 
-          <motion.g
-            onMouseEnter={() => setHoveredCandy('candycane')}
-            onMouseLeave={() => setHoveredCandy(null)}
-            className="cursor-pointer"
-            animate={{
-              scale: hoveredCandy === 'candycane' ? 1.15 : 1,
-              rotate: hoveredCandy === 'candycane' ? 5 : 0
-            }}
-            transition={{ duration: 0.2 }}
-            style={{ transformOrigin: '80px 250px' }}
-          >
+          <g>
             <path
               d="M 70 280 Q 70 260 80 260 Q 90 260 90 280 L 90 320"
               stroke="oklch(0.55 0.22 25)"
@@ -128,38 +99,20 @@ export function GingerbreadHouse() {
               strokeLinecap="round"
             />
             <line x1="80" y1="300" x2="80" y2="310" stroke="white" strokeWidth="3" strokeLinecap="round" />
-          </motion.g>
+          </g>
 
-          <motion.g
-            onMouseEnter={() => setHoveredCandy('peppermint')}
-            onMouseLeave={() => setHoveredCandy(null)}
-            className="cursor-pointer"
-            animate={{
-              scale: hoveredCandy === 'peppermint' ? 1.15 : 1,
-              rotate: hoveredCandy === 'peppermint' ? 360 : 0
-            }}
-            transition={{ duration: 0.3 }}
-            style={{ transformOrigin: '320px 280px' }}
-          >
+          <g>
             <circle cx="320" cy="280" r="12" fill="white" />
             <path d="M 320 268 L 320 292" stroke="oklch(0.55 0.22 25)" strokeWidth="6" />
             <path d="M 308 280 L 332 280" stroke="oklch(0.55 0.22 25)" strokeWidth="6" />
             <circle cx="320" cy="280" r="8" fill="none" stroke="oklch(0.55 0.22 25)" strokeWidth="2" />
-          </motion.g>
+          </g>
 
-          <motion.circle
+          <circle
             cx="200"
             cy="190"
             r="8"
             fill="oklch(0.70 0.18 55)"
-            className="cursor-pointer"
-            onMouseEnter={() => setHoveredCandy('roofcandy')}
-            onMouseLeave={() => setHoveredCandy(null)}
-            animate={{
-              scale: hoveredCandy === 'roofcandy' ? 1.3 : 1,
-              y: hoveredCandy === 'roofcandy' ? -5 : 0
-            }}
-            transition={{ duration: 0.2 }}
           />
         </motion.g>
 
