@@ -8,10 +8,10 @@ function App() {
       
       <div className="relative z-10 text-center">
         <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4 tracking-tight drop-shadow-lg">
-          Sweet Holiday Home
+          Happy Holiday
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mb-12 font-medium">
-          A delightful gingerbread house, crafted with care
+          From @fletchto99
         </p>
         
         <div className="bg-card/30 backdrop-blur-sm rounded-3xl p-8 md:p-12 border-2 border-border/50">
