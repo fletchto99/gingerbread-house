@@ -14,7 +14,7 @@ function App() {
           From @fletchto99
         </p>
         
-        <div className="bg-card/30 backdrop-blur-sm rounded-2xl md:rounded-3xl p-4 md:p-8 lg:p-12 border-2 border-border/50">
+        <div className="p-4 md:p-8 lg:p-12">
           <GingerbreadHouse />
         </div>
       </div>
